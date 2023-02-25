@@ -17,7 +17,7 @@ let phoneConfidence;
 let emptyConfidence;
 
 const sentences = {
-  100: "hihahihahihihahihahihahuehuehuehuehuehuehuuuuuuuuu huuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuua my gahwd je hebt gewoon 100 procent man doe normaal AAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHHHHHHHHHHHH",
+  100: "Helemaal goed",
   90: "Goed gedaan dat is het goede object",
   75: "Bijna goed",
   50: "Ik denk niet dat dit het goede object is",
@@ -55,7 +55,7 @@ function speak() {
   }
 
   const utterThis = new SpeechSynthesisUtterance(sentences[100]);
-  // synth.speak(utterThis);
+  synth.speak(utterThis);
 }
 
 function classify() {
