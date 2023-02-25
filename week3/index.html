@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Prg8 week 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script defer src="/js/main.js"></script>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1>Show your phone</h1>
+        <video autoplay playsinline muted id="webcam"></video><br />
+        <div class="classificationContainer">
+          <div class="class">
+            <p id="label">Phone</p>
+            <p id="confidence"></p>
+          </div>
+          <progress class="class" id="bar" max="100"></progress>
+          <div class="class">
+            <p id="label2">Empty</p>
+            <p id="confidence2"></p>
+          </div>
+          <progress class="class" id="bar2" max="100"></progress>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

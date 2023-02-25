@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /*colors*/
+
+  --clr_primary: hsl(286, 47%, 35%);
+  --clr_font: #e9e9e9;
+
+  /*sizes*/
+  --txt_xs: 0.75rem;
+  --txt_s: 1.4rem;
+  --txt_m: 2.5rem;
+  --txt_xl: 4rem;
+  --txt_xxl: 6rem;
+
+  /*shadows*/
+  --shdw_primary: -1rem 1rem 1rem rgba(0, 0, 0, 0.15);
+  --shdw_secondary: -0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+html {
+  background: linear-gradient(45deg, hsl(232, 70%, 20%) -16.9%, hsl(286, 47%, 32%) 119.9%);
+  font-family: "Open Sans", sans-serif;
+  color: var(--clr_font);
+  letter-spacing: 1px;
+  word-spacing: 2px;
+
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  padding: 1rem 0;
+  font-size: var(--txt_m);
+  margin: 0;
+}
+
+.section {
+  width: calc(100vw - 17px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.classificationContainer {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.class {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: var(--txt_s);
+}
+
+.class > p {
+  margin-left: 10px;
+  min-width: auto;
+  max-width: 10rem;
+}
+
+progress {
+  -webkit-appearance: none;
+  appearance: none;
+  min-width: 5rem;
+  margin-left: 10px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: var(--clr_font);
+  border-radius: 0.5rem;
+  box-shadow: var(--shdw_primary);
+}
+
+progress::-webkit-progress-value {
+  background-color: var(--clr_primary);
+  border-radius: 0.5rem;
+}
+
+video {
+  margin-top: 1rem;
+  transform: scaleX(-1);
+  max-width: 50vw;
+  box-shadow: var(--shdw_secondary);
+}
+
+.correct {
+  color: green;
+}
+
+@media only screen and (max-width: 800px) {
+  .classificationContainer {
+    flex-direction: column;
+  }
+}
