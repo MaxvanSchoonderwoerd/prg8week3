@@ -54,7 +54,7 @@ function speak() {
     }
   }
 
-  const utterThis = new SpeechSynthesisUtterance(sentences[100]);
+  const utterThis = new SpeechSynthesisUtterance(sentences[largestKey]);
   synth.speak(utterThis);
 }
 
